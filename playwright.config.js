@@ -1,6 +1,9 @@
+require('dotenv').config();
+
 const config = {
   testDir: './tests',
   retries: 0,
+  timeout: 60000,
 
   projects: [
     {

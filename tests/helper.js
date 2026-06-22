@@ -1,9 +1,12 @@
 require('dotenv').config();
 
 async function openLoginPage(page) {
-    await page.goto(process.config.BASE_URL + '/login');
+    await page.goto(process.env.BASE_URL + '/login');
 }
 
+/** 
+ * @param {import('@playwright/tests').Page} page
+*/
 async function getEmailField(page) {
     return page.getByPlaceholder('you@email.com');
 }
