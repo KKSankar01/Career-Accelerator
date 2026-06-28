@@ -4,23 +4,19 @@ require('dotenv').config();
 
 const config = {
   testDir: './tests',
-  retries: 1,
+  retries: 0,
   workers: 1,
   timeout: 30000,
   reporter: [["line"], ["allure-playwright"]],
 
   projects: [
     {
-      name: 'chromium',
+      name: 'firefox',
       use: {
-        browserName: 'chromium',
-        headless: false,
-        // ...devices[''],
-        screenshot: 'retain-on-failure',
-        video: 'off',
-        trace: 'off',
+        browserName: 'firefox',
+        headless: true
       }
-    },
+    }
   ],
 
   use: {

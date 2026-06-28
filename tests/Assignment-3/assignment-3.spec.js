@@ -35,7 +35,7 @@ test.beforeEach('Events List Locators and Text Assertions-1', async ({page})=>{
     await expect(await page.locator('.mb-4 span').textContent()).toBe(eventPriceText);
 });
 
-test('Events List Locators and Text Assertions-2',async({page})=>{
+test('@Assignment3 Events List Locators and Text Assertions-2',async({page})=>{
     await page.goBack();
     await page.getByPlaceholder('Search events, venues…').fill('');
     await page.locator('select').nth(0).selectOption({label:'All Categories'});
