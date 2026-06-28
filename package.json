@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "regression": "npx playwright test",
-    "Assignment Level": "npx playwright test --grep @Assignment4",
-    "Firefox-NewConfig": "npx playwright test --config playwrightFirefox.config.js"
+    "AssignmentLevel": "npx playwright test --grep @Assignment4",
+    "FirefoxNewConfig": "npx playwright test --config playwrightFirefox.config.js"
   },
   "keywords": [],
   "author": "",
