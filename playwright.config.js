@@ -7,7 +7,7 @@ const config = {
   retries: 1,
   workers: 1,
   timeout: 30000,
-  reporter: [["line"], ["allure-playwright"]],
+  reporter: [["list"], ["allure-playwright"]],
 
   projects: [
     {
