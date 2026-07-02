@@ -3,11 +3,11 @@ const { test, expect } = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
 
-const { login } = require('./login.spec');
-const { buildMockEvents } = require('./buildMockEvents.spec');
-const { installMockEventRoutes } = require('./installMockEventRoutes.spec');
-const { findEventCardByTitle } = require('./findEventCardByTitle.spec');
-const { parseCurrency } = require('./parseCurrency.spec');
+const { login } = require('./login');
+const { buildMockEvents } = require('./buildMockEvents');
+const { installMockEventRoutes } = require('./installMockEventRoutes');
+const { findEventCardByTitle } = require('./findEventCardByTitle');
+const { parseCurrency } = require('./parseCurrency');
 
 const email = 'sankarkuppusamykenjin@gmail.com';
 const password = 'KLSP@family01';
