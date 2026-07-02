@@ -18,7 +18,7 @@ const config = {
         // ...devices[''],
         screenshot: 'retain-on-failure',
         video: 'off',
-        trace: 'off',
+        trace: 'retain-on-failure',
       }
     },
   ],
